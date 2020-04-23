@@ -27,79 +27,213 @@
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
     </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar" id="sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"href="#">Orders</a>
-                  <ul class="collapse">
-                      <li>
-                          <a href="#">Orders 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Orders 2</a>
-                    </li>
-                  </ul>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  Products
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Customers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrations
-                </a>
-              </li>
-            </ul>
-
-            
-          </div>
-        </nav>
-
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-                <button class="btn btn-sm btn-outline-secondary">Share</button>
-                <button class="btn btn-sm btn-outline-secondary">Export</button>
-              </div>
-              <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                <span data-feather="calendar"></span>
-                This week
+    
+        <!--===================
+        Header
+        =======================-->
+        <header class="header">
+            <nav class="navbar navbar-toggleable-md navbar-light pt-0 pb-0 ">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
               </button>
+              <a class="navbar-brand p-0 mr-5" href="#"><img src="http://via.placeholder.com/61x14"></a>
+              <div class="float-left"> <a href="#" class="button-left"><span class="fa fa-fw fa-bars "></span></a> </div>
+              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown messages-menu">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-bell-o"></i>
+                      <span class="label label-success bg-success">10</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <ul class="dropdown-menu-over list-unstyled">
+                        <li class="header-ul text-center">You have 4 messages</li>
+                        <li>
+                          <!-- inner menu: contains the actual data -->
+                          <ul class="menu list-unstyled">
+                            <li><!-- start message -->
+                            <a href="#">
+                              <div class="pull-left">
+                                <img src="http://via.placeholder.com/160x160" class="rounded-circle  " alt="User Image">
+                              </div>
+                              <h4>
+                              Support Team
+                              <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                              </h4>
+                              <p>Why not buy a new awesome theme?</p>
+                            </a>
+                          </li>
+                          <!-- end message -->
+                          <li>
+                            <a href="#">
+                              <div class="pull-left">
+                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                              </div>
+                              <h4>
+                              AdminLTE Design Team
+                              <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                              </h4>
+                              <p>Why not buy a new awesome theme?</p>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="pull-left">
+                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                              </div>
+                              <h4>
+                              Developers
+                              <small><i class="fa fa-clock-o"></i> Today</small>
+                              </h4>
+                              <p>Why not buy a new awesome theme?</p>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="pull-left">
+                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                              </div>
+                              <h4>
+                              Sales Department
+                              <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                              </h4>
+                              <p>Why not buy a new awesome theme?</p>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="pull-left">
+                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                              </div>
+                              <h4>
+                              Reviewers
+                              <small><i class="fa fa-clock-o"></i> 2 days</small>
+                              </h4>
+                              <p>Why not buy a new awesome theme?</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="footer-ul text-center"><a href="#">See All Messages</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown notifications-menu">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="label label-warning bg-warning">10</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <ul class="dropdown-menu-over list-unstyled">
+                      <li class="header-ul text-center">You have 10 notifications</li>
+                      <li>
+                        <!-- inner menu: contains the actual data -->
+                        <ul class="menu list-unstyled">
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                              page and may cause design problems
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-users text-red"></i> 5 new members joined
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fa fa-user text-red"></i> You changed your username
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="footer-ul text-center"><a href="#">View all</a></li>
+                    </ul>
+                  </div>
+                </li>
+                
+                <li class="nav-item dropdown  user-menu">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="http://via.placeholder.com/160x160" class="user-image" alt="User Image" >
+                    <span class="hidden-xs">bootstrap develop</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
+          </nav>
+        </header>
+        <div class="main">
+          <aside>
+            <div class="sidebar left ">
+              <ul class="list-sidebar bg-defoult">
+                <li> <a href="#"><span class="nav-label">Overview</span></a> </li>
+                <li> <a href="#"><span class="nav-label">Getting Started</span></a> </li>
+                <li> <a href="https://loopback.io/doc/en/lb4/Inside-LoopBack-Application.html"><span class="nav-label">A Typical LoopBack Application</span></a> </li>
+                <li> <a href="#" data-toggle="collapse" data-target="#keyconcepts" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Key Concepts </span> <span class="fa fa-chevron-left pull-right"></span> </a>
 
-          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
-        </main>
+                  <ul class="sub-menu collapse" id="keyconcepts">
+                    <li class="active"><a href="#">Application</a></li>
+                    <li><a href="#">Server</a></li>
+                    <li><a href="#">Controllers</a></li>
+                    <li><a href="#">Models</a></li>
+                    <li><a href="#">Relations</a></li>
+                    <li><a href="#">DataSources</a></li>
+                    <li><a href="#">Repositories</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Interceptors</a></li>
+                    <li><a href="#">Life cycle events and observers</a></li>
+                    <li><a href="#">Routes</a></li>
+                    <li><a href="#">Sequence</a></li>
+                    <li><a href="#">Decorators</a></li>
+                    <li><a href="#">Mixins</a></li>
+                    <li><a href="#">Error handling</a></li>
+                  </ul>
+        
+                <li> <a href="#" data-toggle="collapse" data-target="#developer" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Developer Guide </span> <span class="fa fa-chevron-left pull-right"></span> </a>
+                <ul class="sub-menu collapse" id="developer">
+                  <li class="active"><a href="#">CSS3 Animation</a></li>
+                  <li><a href="#">General</a></li>
+                  <li><a href="#">Buttons</a></li>
+                  <li><a href="#">Tabs & Accordions</a></li>
+                  <li><a href="#">Typography</a></li>
+                  <li><a href="#">FontAwesome</a></li>
+                  <li><a href="#">Slider</a></li>
+                  <li><a href="#">Panels</a></li>
+                  <li><a href="#">Widgets</a></li>
+                  <li><a href="#">Bootstrap Model</a></li>
+                </ul>
+              </li>
+            
+        <li> <a href="#" data-toggle="collapse" data-target="#debugging" class="collapsed active" ><i class="fa fa-table"></i> <span class="nav-label">Testing & Debugging Guide</span><span class="fa fa-chevron-left pull-right"></span></a>  
+        </li>
+        <li> <a href="#" data-toggle="collapse" data-target="#deployment" class="collapsed active" ><i class="fa fa-table"></i> <span class="nav-label">Deployment Guide</span><span class="fa fa-chevron-left pull-right"></span></a>
+            <ul class="sub-menu collapse" id="deployment">
+                <li class="active"><a href="#">Deploying to IBM Cloud</a></li>
+                <li><a href="#">Deploying to Kubernetes on IBM Cloud</a></li>
+                <li><a href="#">Deploying with pm2 and nginx</a></li>
+                <li><a href="#">Developing and deploying LoopBack Applications with Appsody</a></li>
+              </ul>
+        </li>
+         
+      </ul>
       </div>
-    </div>
+      </aside>
+      </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -108,6 +242,13 @@
     <script src="dist/popper/1.14.0/umd/popper.min.js"></script>
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
    
-   
+   <script>
+       $(document).ready(function(){
+   $('.button-left').click(function(){
+       $('.sidebar').toggleClass('fliph');
+   });
+     
+});
+   </script>
   </body>
 </html>
