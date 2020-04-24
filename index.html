@@ -1,254 +1,368 @@
+<html>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
-
-    <title>Dashboard Template for Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
-    
+<head>
     <!-- Bootstrap core CSS -->
-    <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   
-    
+    <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="main.css" rel="stylesheet">
-  </head>
+    <link href="main.css" rel="stylesheet" />
+</head>
 
-  <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">LoopBack</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-    </nav>
-
-    
-        <!--===================
-        Header
-        =======================-->
-        <header class="header">
-            <nav class="navbar navbar-toggleable-md navbar-light pt-0 pb-0 ">
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="navbar-brand p-0 mr-5" href="#"><img src="http://via.placeholder.com/61x14"></a>
-              <div class="float-left"> <a href="#" class="button-left"><span class="fa fa-fw fa-bars "></span></a> </div>
-              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown messages-menu">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fa fa-bell-o"></i>
-                      <span class="label label-success bg-success">10</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <ul class="dropdown-menu-over list-unstyled">
-                        <li class="header-ul text-center">You have 4 messages</li>
+<body>
+    <div class="tree">
+        <ul>
+            <li>
+                <span><a data-toggle="collapse" href="#Web"><i class="collapsed"><i class="fa fa-plus"></i></i>
+                        <i class="expanded"><i class="fa fa-minus"></i></i> LoopBack 4</a></span>
+                <div id="Web" class="collapse show col-4">
+                    <ul>
                         <li>
-                          <!-- inner menu: contains the actual data -->
-                          <ul class="menu list-unstyled">
-                            <li><!-- start message -->
-                            <a href="#">
-                              <div class="pull-left">
-                                <img src="http://via.placeholder.com/160x160" class="rounded-circle  " alt="User Image">
-                              </div>
-                              <h4>
-                              Support Team
-                              <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                              </h4>
-                              <p>Why not buy a new awesome theme?</p>
-                            </a>
-                          </li>
-                          <!-- end message -->
-                          <li>
-                            <a href="#">
-                              <div class="pull-left">
-                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                              </div>
-                              <h4>
-                              AdminLTE Design Team
-                              <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                              </h4>
-                              <p>Why not buy a new awesome theme?</p>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <div class="pull-left">
-                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                              </div>
-                              <h4>
-                              Developers
-                              <small><i class="fa fa-clock-o"></i> Today</small>
-                              </h4>
-                              <p>Why not buy a new awesome theme?</p>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <div class="pull-left">
-                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                              </div>
-                              <h4>
-                              Sales Department
-                              <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                              </h4>
-                              <p>Why not buy a new awesome theme?</p>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <div class="pull-left">
-                                <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                              </div>
-                              <h4>
-                              Reviewers
-                              <small><i class="fa fa-clock-o"></i> 2 days</small>
-                              </h4>
-                              <p>Why not buy a new awesome theme?</p>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="footer-ul text-center"><a href="#">See All Messages</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-item dropdown notifications-menu">
-                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="label label-warning bg-warning">10</span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <ul class="dropdown-menu-over list-unstyled">
-                      <li class="header-ul text-center">You have 10 notifications</li>
-                      <li>
-                        <!-- inner menu: contains the actual data -->
-                        <ul class="menu list-unstyled">
-                          <li>
-                            <a href="#">
-                              <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                              page and may cause design problems
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa fa-users text-red"></i> 5 new members joined
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="fa fa-user text-red"></i> You changed your username
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="footer-ul text-center"><a href="#">View all</a></li>
-                    </ul>
-                  </div>
-                </li>
-                
-                <li class="nav-item dropdown  user-menu">
-                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="http://via.placeholder.com/160x160" class="user-image" alt="User Image" >
-                    <span class="hidden-xs">bootstrap develop</span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-        <div class="main">
-          <aside>
-            <div class="sidebar left ">
-              <ul class="list-sidebar bg-defoult">
-                <li> <a href="#"><span class="nav-label">Overview</span></a> </li>
-                <li> <a href="#"><span class="nav-label">Getting Started</span></a> </li>
-                <li> <a href="https://loopback.io/doc/en/lb4/Inside-LoopBack-Application.html"><span class="nav-label">A Typical LoopBack Application</span></a> </li>
-                <li> <a href="#" data-toggle="collapse" data-target="#keyconcepts" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Key Concepts </span> <span class="fa fa-chevron-left pull-right"></span> </a>
+                            <span><a href="#!"> Overview</a></span>
+                        </li>
+                        <li>
+                            <span><a href="#!"> Getting Started</a></span>
+                        </li>
+                        <li>
+                            <span><a href="#!"> Inside a LoopBack Application</a></span>
+                        </li>
+                        <li>
+                            <span><a data-toggle="collapse" href="#keyConcepts"
+                                    aria-expanded="false" aria-controls="keyConcepts"><i class="collapsed"><i
+                                            class="fa fa-plus"></i></i>
+                                    <i class="expanded"><i class="fa fa-minus"></i></i>
+                                    Key Concepts</a></span>
+                            <ul>
+                                <div id="keyConcepts" class="collapse">
+                                    <li>
+                                        <span><a href="#!"> Application</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Server</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Controllers</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Models</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> More...</a></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
 
-                  <ul class="sub-menu collapse" id="keyconcepts">
-                    <li class="active"><a href="#">Application</a></li>
-                    <li><a href="#">Server</a></li>
-                    <li><a href="#">Controllers</a></li>
-                    <li><a href="#">Models</a></li>
-                    <li><a href="#">Relations</a></li>
-                    <li><a href="#">DataSources</a></li>
-                    <li><a href="#">Repositories</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Interceptors</a></li>
-                    <li><a href="#">Life cycle events and observers</a></li>
-                    <li><a href="#">Routes</a></li>
-                    <li><a href="#">Sequence</a></li>
-                    <li><a href="#">Decorators</a></li>
-                    <li><a href="#">Mixins</a></li>
-                    <li><a href="#">Error handling</a></li>
-                  </ul>
-        
-                <li> <a href="#" data-toggle="collapse" data-target="#developer" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Developer Guide </span> <span class="fa fa-chevron-left pull-right"></span> </a>
-                <ul class="sub-menu collapse" id="developer">
-                  <li class="active"><a href="#">CSS3 Animation</a></li>
-                  <li><a href="#">General</a></li>
-                  <li><a href="#">Buttons</a></li>
-                  <li><a href="#">Tabs & Accordions</a></li>
-                  <li><a href="#">Typography</a></li>
-                  <li><a href="#">FontAwesome</a></li>
-                  <li><a href="#">Slider</a></li>
-                  <li><a href="#">Panels</a></li>
-                  <li><a href="#">Widgets</a></li>
-                  <li><a href="#">Bootstrap Model</a></li>
-                </ul>
-              </li>
-            
-        <li> <a href="#" data-toggle="collapse" data-target="#debugging" class="collapsed active" ><i class="fa fa-table"></i> <span class="nav-label">Testing & Debugging Guide</span><span class="fa fa-chevron-left pull-right"></span></a>  
-        </li>
-        <li> <a href="#" data-toggle="collapse" data-target="#deployment" class="collapsed active" ><i class="fa fa-table"></i> <span class="nav-label">Deployment Guide</span><span class="fa fa-chevron-left pull-right"></span></a>
-            <ul class="sub-menu collapse" id="deployment">
-                <li class="active"><a href="#">Deploying to IBM Cloud</a></li>
-                <li><a href="#">Deploying to Kubernetes on IBM Cloud</a></li>
-                <li><a href="#">Deploying with pm2 and nginx</a></li>
-                <li><a href="#">Developing and deploying LoopBack Applications with Appsody</a></li>
-              </ul>
-        </li>
-         
-      </ul>
-      </div>
-      </aside>
-      </div>
+                        <li>
+                            <span><a data-toggle="collapse" href="#developerGuide"
+                                    aria-expanded="false" aria-controls="Page2"><i class="collapsed"><i
+                                            class="fa fa-plus"></i></i>
+                                    <i class="expanded"><i class="fa fa-minus"></i></i>
+                                    Developer Guide</a></span>
+                            <ul>
+                                <div id="developerGuide" class="collapse">
+                                    <li>
+                                        <span><a data-toggle="collapse"
+                                                href="#workingWithDb" aria-expanded="false" aria-controls="folder1"><i
+                                                    class="collapsed"><i class="fa fa-plus"></i></i>
+                                                <i class="expanded"><i class="fa fa-minus"></i></i>
+                                                Working with Database</a></span>
+                                        <ul>
+                                            <div id="workingWithDb" class="collapse">
+                                                <li>
+                                                    <span><a href="#!"> Database Migration</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Working with Data</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Link 3</a></span>
+                                                    <a href="#!">& More Link</a>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Create GraphQL APIs</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Calling REST/SOAP Services</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Authentication</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Authorization</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a  data-toggle="collapse"
+                                                href="#integration" aria-expanded="false" aria-controls="folder2"><i
+                                                    class="collapsed"><i class="fa fa-plus"></i></i>
+                                                <i class="expanded"><i class="fa fa-minus"></i></i>
+                                                Integration</a></span>
+                                        <ul>
+                                            <div id="integration" class="collapse">
+                                                <li>
+                                                    <span><a href="#!"> TypeORM</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Mongoose</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Link 3</a></span>
+                                                    <a href="#!">& More Link</a>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Upload and Download Files</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a data-toggle="collapse"
+                                                href="#validation" aria-expanded="false" aria-controls="folder3"><i
+                                                    class="collapsed"><i class="fa fa-plus"></i></i>
+                                                <i class="expanded"><i class="fa fa-minus"></i></i>
+                                                Validation</a></span>
+                                        <ul>
+                                            <div id="validation" class="collapse">
+                                                <li>
+                                                    <span><a href="#!"> REST layer</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Controller, Repository and Service layer</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> ORM layer</a></span>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span><a data-toggle="collapse"
+                                                href="#usingComponents" aria-expanded="false" aria-controls="folder1"><i
+                                                    class="collapsed"><i class="fa fa-plus"></i></i>
+                                                <i class="expanded"><i class="fa fa-minus"></i></i>
+                                                Using Components</a></span>
+                                        <ul>
+                                            <div id="usingComponents" class="collapse">
+                                                <li>
+                                                    <span><a href="#!"> Running Cron jobs</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Health Check</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Community Extensions</a></span>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span><a data-toggle="collapse"
+                                                href="#behindTheScene" aria-expanded="false" aria-controls="folder3"><i
+                                                    class="collapsed"><i class="fa fa-plus"></i></i>
+                                                <i class="expanded"><i class="fa fa-minus"></i></i>
+                                                Behind the Scene</a></span>
+                                        <ul>
+                                            <div id="behindTheScene" class="collapse">
+                                                <li>
+                                                    <span><a href="#!"> Context</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Binding</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Dependency Injection</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Components</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Request/response Cycle</a></span>
+                                                </li>
+                                                <li>
+                                                    <span><a href="#!"> Booting an Application</a></span>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span><a data-toggle="collapse"
+                                            href="#tutorials" aria-expanded="false" aria-controls="folder3"><i
+                                                class="collapsed"><i class="fa fa-plus"></i></i>
+                                            <i class="expanded"><i class="fa fa-minus"></i></i>
+                                            Tutorials</a></span>
+                                    <ul>
+                                        <div id="tutorials" class="collapse">
+                                            <li>
+                                                <span><a href="#!"> Todo Tutorial</a></span>
+                                            </li>
+                                            <li>
+                                                <span><a href="#!"> TodoList Tutorial</a></span>
+                                            </li>
+                                            <li>
+                                                <span><a href="#!"> SOAP Web Service Tutorial</a></span>
+                                            </li>
+                                            <li>
+                                                <span><a href="#!"> More...</a></span>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Examples</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Debugging & Testing</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Best Practices</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> CLI Reference</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a data-toggle="collapse" href="#connectorRef"
+                                            aria-expanded="false" aria-controls="keyConcepts"><i class="collapsed"><i
+                                                    class="fa fa-plus"></i></i>
+                                            <i class="expanded"><i class="fa fa-minus"></i></i>
+                                            Connector References</a></span>
+                                    <ul>
+                                        <div id="connectorRef" class="collapse">
+                                            <li>
+                                                <span><a href="#!"> Memory Connector</a></span>
+                                            </li>
+                                            <li>
+                                                <span><a href="#!"> Database connectors</a></span>
+                                            </li>
+                                            <li>
+                                                <span><a href="#!"> Other connectors</a></span>
+                                            </li>
+                                            <li>
+                                                <span><a href="#!"> Community connectors</a></span>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> API Docs</a></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <span><a data-toggle="collapse" href="#contributorGuide"
+                                    aria-expanded="false" aria-controls="keyConcepts"><i class="collapsed"><i
+                                            class="fa fa-plus"></i></i>
+                                    <i class="expanded"><i class="fa fa-minus"></i></i>
+                                    Extension Developer Guide</a></span>
+                            <ul>
+                                <div id="contributorGuide" class="collapse">
+                                    <li>
+                                        <span><a href="#!"> Creating components</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Creating decorators</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Extension points and extensions</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Extending request body parsing</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> More...</a></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <span><a data-toggle="collapse" href="#deploymentGuide"
+                                    aria-expanded="false" aria-controls="keyConcepts"><i class="collapsed"><i
+                                            class="fa fa-plus"></i></i>
+                                    <i class="expanded"><i class="fa fa-minus"></i></i>
+                                    Deployment Guide</a></span>
+                            <ul>
+                                <div id="deploymentGuide" class="collapse">
+                                    <li>
+                                        <span><a href="#!"> IBM Cloud using Cloud Foundry</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Kubernetes</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> pm2 and ngix</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Appsody</a></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <span><a data-toggle="collapse" href="#contributorGuide"
+                                    aria-expanded="false" aria-controls="keyConcepts"><i class="collapsed"><i
+                                            class="fa fa-plus"></i></i>
+                                    <i class="expanded"><i class="fa fa-minus"></i></i>
+                                    Contributor Guide</a></span>
+                            <ul>
+                                <div id="contributorGuide" class="collapse">
+                                    <li>
+                                        <span><a href="#!"> Submit a PR</a></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <span><a data-toggle="collapse" href="#migrationGuide"
+                                    aria-expanded="false" aria-controls="keyConcepts"><i class="collapsed"><i
+                                            class="fa fa-plus"></i></i>
+                                    <i class="expanded"><i class="fa fa-minus"></i></i>
+                                    Migration Guide</a></span>
+                            <ul>
+                                <div id="migrationGuide" class="collapse">
+                                    <li>
+                                        <span><a href="#!"> Understanding the differences</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Request/response cycle</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> Mounting a LoopBack 3 application</a></span>
+                                    </li>
+                                    <li>
+                                        <span><a href="#!"> More...</a></span>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <span><a href="#!"> Change Logs</a></span>
+                        </li>
+                        <li>
+                            <span><a data-toggle="collapse" href="#reference"
+                                aria-expanded="false" aria-controls="keyConcepts"><i class="collapsed"><i
+                                        class="fa fa-plus"></i></i>
+                                <i class="expanded"><i class="fa fa-minus"></i></i>
+                                Reference</a></span>
+                        <ul>
+                            <div id="reference" class="collapse">
+                                <li>
+                                    <span><a href="#!"> Considerations for GDPR readiness</a></span>
+                                </li>
+                            </div>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="dist/jquery/jquery-3.4.1.min.js"  crossorigin="anonymous"></script>
-    <script src="dist/popper/1.14.0/umd/popper.min.js"></script>
-    <script src="dist/bootstrap/js/bootstrap.min.js"></script>
-   
-   <script>
-       $(document).ready(function(){
-   $('.button-left').click(function(){
-       $('.sidebar').toggleClass('fliph');
-   });
-     
-});
-   </script>
-  </body>
+    <script src="dist/jquery/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="dist/popper/1.14.0/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="dist/bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
